@@ -1,0 +1,92 @@
+html, body, #app {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --baseBlue: #133AF8;
+    --contentBase: #291944;
+}
+
+.fullHeight {
+    height: inherit;
+}
+
+.ui.secondary.menu.top {
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    margin-bottom: 3%;
+}
+
+.ui.secondary.menu.top a.item {
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 4px 9px 4px 9px;
+}
+
+.ui.secondary.menu.top a.item:hover, .ui.secondary.menu.top a.item.active {
+    font-weight: 700;
+    border-radius: 0px;
+    border-bottom: solid 3px var(--baseBlue) !important;
+    background-color: white !important;
+}
+
+.ui.secondary.menu.vertical a.item {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 4px 9px 4px 9px;
+    color: #a9a9a9 !important;
+}
+
+.ui.secondary.menu.vertical a.item:hover, .ui.secondary.menu.vertical a.item.active {
+    font-weight: 700;
+    border-radius: 0px;
+    background-color: white !important;
+    color: #000!important;
+}
+
+.ui.secondary.menu.top a.item.static:hover, .ui.secondary.menu.top a.item.static.active {
+    border-bottom: solid 0px white !important;
+}
+
+.ui.menu.top .item > i.icon {
+    opacity: 0.5;
+    float: none;
+    margin: 0em 0em 0em 0em;
+}
+
+i.sidebar.large.icon {
+    color: var(--baseBlue)
+}
+
+.ui.menu.top .item > i.icon:hover {
+    opacity: 0.7;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: width 0.4s ease-out;
+    padding-top: 10%;
+    height: 90%;
+
+}
+
+.ui.menu.secondary.vertical {
+    padding-left: 5%;
+
+}
+
+#main {
+    transition: margin-left 0.4s ease-out;
+    background-color: var(--contentBase);
+    height: 85% !important;
+}
